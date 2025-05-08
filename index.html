@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     </head>
     
@@ -37,7 +38,7 @@
             <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
         </nav>
     </aside>
-
+    <!--home-->
     <section class="home" id="home">
         <div class="overlay"></div>
         <div class="content">
@@ -45,25 +46,141 @@
           <h2>I'm</h2>
         </div>
     </section>
-<!--
+
     <section class="about" id="about">
-        <h1>About</h1>
+        <h1 class="section-title">About</h1>
         <p>Magnam dolores commodi est suspect. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Asseyez-vous sint consectetur velit. Quisquam quos quisquam cupidité. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        <img src="images/profil.jpg" alt="Photo">
+        <br><br>
+    
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/profil.jpg" alt="Photo">
+            </div>
+    
+            <div class="about-text">
+                <h2>Concepteur UI/UX et développeur Web.</h2><br>
+                <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em></p><br>
+    
+                <div class="lists">
+                    <ul>
+                        <li><i class="fas fa-chevron-right"></i><strong>Anniversaire:</strong> 1er mai 1995</li>
+                        <li><i class="fas fa-chevron-right"></i><strong>Site web:</strong> www.exemple.com</li>
+                        <li><i class="fas fa-chevron-right"></i><strong>Téléphone:</strong> +123 456 7890</li>
+                        <li><i class="fas fa-chevron-right"></i><strong>Ville:</strong> New York, États-Unis</li>
+                    </ul>
+                    <ul>
+                        <li><i class="fas fa-chevron-right"></i><strong>Âge:</strong> 30</li>
+                        <li><i class="fas fa-chevron-right"></i><strong>Degré:</strong> Maître</li>
+                        <li><i class="fas fa-chevron-right"></i><strong>E-mail:</strong> email@exemple.com</li>
+                        <li><i class="fas fa-chevron-right"></i><strong>Freelance:</strong> Disponible</li>
+                    </ul>
+                </div><br>
+    
+                <p>Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupidite ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.</p>
+            </div>
+        </div><br><br>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">
+                    <i class="bi bi-emoji-smile" style="color: #00b4d8; margin-right: 8px;"></i>232</span>
+                <p>Clients satisfaits</p>
+            </div>
+            
+            <div class="stat-item">
+                <span class="stat-number">
+                    <i class="bi bi-journal-richtext" style="color: #00b4d8; margin-right: 8px;"></i>521</span>
+                <p>Projets</p>
+            </div>
+            
+            <div class="stat-item">
+                <span class="stat-number">
+                    <i class="bi bi-headset" style="color: #00b4d8; margin-right: 8px;"></i>1 453</span>
+                <p>Heures d'assistance</p>
+            </div>
+            
+            <div class="stat-item">
+                <span class="stat-number">
+                    <i class="bi bi-people" style="color: #00b4d8; margin-right: 8px;"></i>32</span>
+                <p>Hard Workers</p>
+            </div>
+        </div><br><br>
+    
     </section>
     
-    <section class="skills" id="skills">
-        <h1>competences</h1>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>WORDPRESS/CMS</li>
-            <li>PHOTOSHOP</li>
-        </ul>
+    <section class="skills-section" id="skills" class="section-title">
+        <h1>Compétences</h1>
+        <hr class="skills-divider">
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        
+        <div class="skills-container">
+            
+            <div class="skills-column">
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>HTML</span>
+                        <span>100%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 100%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>JAVASCRIPT</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+    
+            
+            <div class="skills-column">
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>PHP</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>WORDPRESS/CMS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>PHOTOSHOP</span>
+                        <span>55%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 55%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
+<!--
     <section class="cv" id="cv">
         <h1>CV</h1>
         <p>Magnam dolores commodi est suspect. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Asseyez-vous sint consectetur velit. Quisquam quos quisquam cupidité. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
