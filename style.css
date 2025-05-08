@@ -66,13 +66,13 @@
     width: 40px; 
     height: 40px; 
     border-radius: 50%; 
-    background-color: #2b293a; 
+    background-color: #232326; 
     text-align: center;
     
   }
   
   .social-icons a:hover {
-    color: #58a6ff;
+    background-color: #58a6ff;
   }
   
   
@@ -97,7 +97,7 @@
   }
   
   .nav-menu a:hover {
-    background-color: #21262d;
+    background-color: #21262d00;
     color: #ffffff;
   }
   
@@ -113,7 +113,7 @@
     color: #58a6ff; 
   }
   
-  /*
+  
   section {
     margin-left: 300px; 
     background-color: #fff;
@@ -279,4 +279,4 @@
     padding-bottom: 5px;
     margin-bottom: 20px;
   }
-  */
+  
