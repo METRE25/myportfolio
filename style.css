@@ -166,7 +166,20 @@
     padding: 60px 20px;
     background: #fff;
   }
-  
+  .cv p {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .cv ul{
+    list-style-position: outside; /* positionne les disques à gauche, pas à l'intérieur */
+    padding-left: 20px;
+  }
+  .cv li {
+  font-family: 'Open Sans', sans-serif;
+  display: list-item;  /* s'assurer qu'on garde bien le style en ligne */
+  text-indent: 0;
+  margin-left: 0;
+  line-height: 1.6;
+}
   .cv-container {
     padding: 20px 0;
   }
@@ -190,6 +203,7 @@
     list-style-type: disc;
     padding-left: 20px;
     margin-top: 5px;
+    
   }
 
   .timeline-column {
@@ -222,12 +236,16 @@
     border-radius: 50%;
   }
   .cv h3 {
-    color: #666;
-    font-weight: normal;
+    color: #515151;
+    font-size: 1.05rem;
   }
+.cv span,
+.cv .stat-number,
+.cv .number {
+  font-family: 'Raleway', sans-serif !important;
+}
   .cv h1 {
     display: inline-block;
-    border-bottom: 5px solid #00b4d8;
     padding-bottom: 5px;
     font-size: 2rem;
   }
@@ -335,7 +353,7 @@
 }
 .stats-grid {
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
