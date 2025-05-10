@@ -143,7 +143,7 @@
   }
   
   #portfolio {
-    background-color: #c9ecfb;
+    background-color: #f4fafd;
   }
   
   #services {
@@ -399,7 +399,7 @@
 .skills-section {
   margin-left: 23%; 
   background-color: #fff;
-  padding: 1%;
+  padding: 5vh 1vw;
   margin-bottom: 0px;
   padding-top: 4.5%;
   border-radius: 0px;
@@ -415,39 +415,39 @@
 .skills-divider {
   border: none;
   height: 3px;
-  width: 80px;
+  width: 8vw;
   
   margin-bottom: 2%;
 }
 
 .skills-section p {
   text-align: left;
-  margin-bottom: 50px;
+  margin: 0 auto 4vh auto;
   margin-top: 0px;
   color: #000000;
   font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
 }
 
 .skills-container {
   display: flex;
-  gap: 30px;
+  gap: 3vw;
   justify-content: center;
 }
 
 .skills-column {
-  flex: 1;
+  flex: 1 1 300px;
   max-width: 500px;
+  min-width: 250px;
 }
 
 .skill {
-  margin-bottom: 25px;
+  margin-bottom: 3vh;
 }
-
-
 .skill-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 7px;
+  margin-bottom: 1vh;
   font-size: 0.7em;
   font-weight: bold;
 }
@@ -488,6 +488,59 @@
   width: 100%;
   height: 4px;
   background-color: #149ddd;
-  margin-top: 15px;
-  
+  margin-top: 15px; 
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 colonnes */
+  grid-template-rows: repeat(4, 1fr);    /* 4 lignes automatiques */
+  gap: 1vw;
+  height: 132vh;
+}
+.portfolio-item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.portfolio p{
+  margin-bottom: 7%;
+  margin-top: 1.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+.portfolio-buttons {
+  display: flex;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 0vw;
+  margin-bottom: 4vh;
+  flex-wrap: wrap;
+  font-family: 'Open Sans', sans-serif;
+}
+.portfolio-buttons button {
+  padding: 0.4em 0.8em;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #00b4d800;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-buttons button:hover {
+ color:#00b4d8;
 }
