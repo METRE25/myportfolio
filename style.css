@@ -117,7 +117,7 @@
   section {
     margin-left: 23%; 
     background-color: #fff;
-    padding: 10px;
+    padding: 4vh 1vw;
     padding-top: 4.5%;
     margin-bottom: 0px;
     border-radius: 0px;
@@ -162,93 +162,99 @@
     font-weight: bold; 
   }
 
-  .cv {
-    padding: 60px 20px;
-    background: #fff;
-  }
+.cv {
+  padding: 6vh 1vw; /* correspond environ à 60px 20px sur un écran moyen */
+  background: #fff;
+}
   .cv p {
-    font-family: 'Open Sans', sans-serif;
-  }
-  .cv ul{
-    list-style-position: outside; /* positionne les disques à gauche, pas à l'intérieur */
-    padding-left: 20px;
-  }
-  .cv li {
   font-family: 'Open Sans', sans-serif;
-  display: list-item;  /* s'assurer qu'on garde bien le style en ligne */
+}
+
+.cv ul {
+  list-style-position: outside;
+  padding-left: 1.5em;
+}
+
+.cv li {
+  font-family: 'Open Sans', sans-serif;
+  display: list-item;
   text-indent: 0;
   margin-left: 0;
   line-height: 1.6;
 }
-  .cv-container {
-    padding: 20px 0;
-  }
-  
-  .cv-heading {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-  
-  .left-title,
-  .right-title {
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .right-title {
-    padding-left: 20px;
-  }
-  .cv-container ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-top: 5px;
-    
-  }
 
-  .timeline-column {
-    position: relative;
-  }
-  
-  .timeline-block {
-    position: relative;
-    margin-left: 5px;
-    padding-left: 20px;
-    border-left: 2px solid #00b4d8;
-  }
+.cv-container {
+  padding: 3vh 0;
+}
 
-  .timeline-block h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    line-height: 0.8; 
-    position: relative;
-  }
-  
-  .timeline-block::before {
-    content: "";
-    position: absolute;
-    left: -9px;
-    top: 0;
-    width: 12px;
-    height: 12px;
-    background: white;
-    border: 2px solid #00b4d8;
-    border-radius: 50%;
-  }
-  .cv h3 {
-    color: #515151;
-    font-size: 1.05rem;
-  }
+.cv-heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vw;
+}
+
+.left-title,
+.right-title {
+  flex: 1;
+  min-width: 20rem; /* minimum 320px environ, mais adaptable */
+}
+
+.right-title {
+  padding-left: 2vw;
+}
+
+.cv-container ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin-top: 0.5em;
+}
+
+.timeline-column {
+  position: relative;
+}
+
+.timeline-block {
+  position: relative;
+  margin-left: 0.5vw;
+  padding-left: 2vw;
+  border-left: 0.2vw solid #00b4d8;
+}
+
+.timeline-block h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 0.8;
+  position: relative;
+}
+
+.timeline-block::before {
+  content: "";
+  position: absolute;
+  left: -0.6vw;
+  top: 0;
+  width: 0.8vw;
+  height: 0.8vw;
+  background: white;
+  border: 0.2vw solid #00b4d8;
+  border-radius: 50%;
+}
+
+.cv h3 {
+  color: #515151;
+  font-size: 1.05rem;
+}
+
 .cv span,
 .cv .stat-number,
 .cv .number {
   font-family: 'Raleway', sans-serif !important;
 }
-  .cv h1 {
-    display: inline-block;
-    padding-bottom: 5px;
-    font-size: 2rem;
-  }
+
+.cv h1 {
+  display: inline-block;
+  padding-bottom: 0.5vh;
+  font-size: 2rem;
+}
   .home {
     position: relative;
     background-image: url("images/profi.jpg");
