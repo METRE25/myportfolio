@@ -326,6 +326,7 @@
   font-family: 'Open Sans', sans-serif;
   font-size: clamp(0.95rem, 2vw, 1rem);
   line-height: 1.6;
+  margin-top: 15px;
   
 }
 .lists {
@@ -599,4 +600,95 @@
   background-color: #ffffff;
   color: #009fe3;
   border-color: #009fe3;
+}
+.testimonials {
+  background-color: #f4fafd;
+}
+
+.testimonials h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.testimonial-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* corriger ici */
+  gap: 15px;
+  flex-wrap: wrap; /* Permet le retour à la ligne sur petits écrans */
+  margin-top: 40px;
+}
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.testimonial {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 0 50px rgba(0,0,0,0.05);
+  position: relative;
+  margin-bottom: 40px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.testimonials p{
+  margin-bottom: 7%;
+  margin-top: 1.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+.arrow-down {
+  position: absolute;
+  bottom: -15px; /* Descend la flèche */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid rgb(255, 255, 255);
+}
+.quote {
+  font-style: italic;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 300px;
+  display: inline-block;
+  position: relative;
+}
+
+.quote-icon-left,
+.quote-icon-right {
+  color: #149ddd;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.person {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.person img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 0px solid #fff;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.person h3 {
+  margin: 10px 0 5px;
+}
+
+.person span {
+  color: gray;
+  font-size: 0.9em;
 }
