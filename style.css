@@ -155,7 +155,7 @@
   }
   
   #contact {
-    background-color: #cbfaff;
+    background-color: #ffffff;
   }
   .nom-gros {
     font-size: 24px; 
@@ -642,14 +642,14 @@
 }
 .arrow-down {
   position: absolute;
-  bottom: -15px; /* Descend la flèche */
+  bottom: -19px; /* Descend la flèche */
   left: 50%;
   transform: translateX(-50%);
   width: 0;
   height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid rgb(255, 255, 255);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgb(255, 255, 255);
 }
 .quote {
   font-style: italic;
@@ -672,13 +672,13 @@
 }
 
 .person {
-  margin-top: 30px;
+  margin-top: 0px;
   text-align: center;
 }
 
 .person img {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   border: 0px solid #fff;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
@@ -691,4 +691,186 @@
 .person span {
   color: gray;
   font-size: 0.9em;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: left;
+  max-width: 1200px;
+  margin: auto;
+  max-height: 100%;
+}
+.contact-section p{
+  margin-bottom: 7%;
+  margin-top: 1.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+.contact-section{
+  padding-bottom: 60px;
+}
+.contact-info{
+  background: #fff;
+  padding: 30px;
+  border-radius: 0px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 39%;
+  max-width: 39%;
+}
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 0px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 58%;
+  max-width: 58%;
+  margin: 0 auto;
+}
+
+.info-box {
+  display: flex;
+  align-items: flex-start; 
+  gap: 10px; 
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.info-box .icon {
+  font-size: 20px;
+  color: #149ddd;
+  margin-bottom: 0px;
+  align-items: center;
+  gap: 10px;
+  background: rgba(206, 236, 250, 0.5);
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.info-box .icon:hover {
+  background-color: #149ddd;
+  color: #ffffff;
+}
+
+
+.info-box h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.info-box p {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 270px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 27px;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-group input{
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+  height: 40px;
+}
+.form-group textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+  height: 225px;
+}
+
+.form-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button[type="submit"] {
+  background: #10a5ec;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #0e90d1;
+}
+.footer {
+  background-color: #f4fafd;
+  padding: 30px 0;
+  border-top: 1px solid #ddd;
+  font-size: 13px;
+  color: #000000;
+  margin-left: 23%;
+  display: block;
+  justify-content: center; 
+  align-items: center;      
+  text-align: center !important;
+}
+ 
+.footer-container {
+  max-width: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+.footer-container p{
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+.footer a {
+  color: #10a5ec;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+input:focus, textarea:focus {
+  border: 1px solid #149ddd; 
+  outline: none; 
 }
