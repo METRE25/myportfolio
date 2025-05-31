@@ -852,6 +852,12 @@ input:focus, textarea:focus {
   .home {
     background-position: 72%;
   }
+    .testimonial-boxes {
+    flex-wrap: nowrap; 
+  }
+  .testimonial-boxes > *:nth-child(n+3) {
+    display: none;
+  }
   .footer,
   section {
     margin-left: 0;
@@ -865,6 +871,15 @@ input:focus, textarea:focus {
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);  
     grid-template-rows: repeat(6, 1fr); 
+  } 
+}
+@media (max-width: 480px) {
+  .testimonial-boxes > *:nth-child(n+2) {
+    display: none;
+  }}
+@media (max-width: 1024px) {
+  .testimonial-boxes > *:nth-child(n+3) {
+    display: none;
   }
 }
 
